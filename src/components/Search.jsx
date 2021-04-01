@@ -35,7 +35,7 @@ function Search() {
   console.log("traker", response);
   return (
     <div>
-      <h1>Type and Search</h1>
+      <h3>Type and search</h3>
       <label>Search : </label>{" "}
       <input type="text" onChange={onInputChangeHanlder}></input>
       <div style={{ width: "100%" }}>

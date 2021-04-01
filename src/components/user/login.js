@@ -48,7 +48,7 @@ const Login = (props) => {
             localStorage.setItem("user", JSON.stringify(resp));
           }
           props.history.push("/dashboard");
-          // window.location.reload();
+          window.location.reload();
         },
         (error) => {
           const resMessage =

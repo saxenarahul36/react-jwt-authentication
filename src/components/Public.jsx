@@ -19,11 +19,15 @@ const Home = () => {
       }
     );
   }, []);
-
+  const client_id = process.env.REACT_APP_CLIENT_ID;
+  const api_key = process.env.REACT_APP_API_KEY;
   return (
     <div className="container">
       <header className="jumbotron">
         <h3>{content.message}</h3>
+        Using .env for variables
+        <p>Client ID: {client_id}</p>
+        <p>API Key: {api_key}</p>
       </header>
     </div>
   );

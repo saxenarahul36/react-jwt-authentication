@@ -17,10 +17,14 @@ const getAdminBoard = () => {
   return api.get("/api/admin", { headers: authHeader() });
 };
 
+const getAllUserList = () => {
+  return api.get("/api/alluser", { headers: authHeader() });
+};
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   getPublicContent,
   getUserBoard,
   getModeratorBoard,
   getAdminBoard,
+  getAllUserList,
 };
