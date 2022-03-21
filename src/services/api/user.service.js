@@ -20,8 +20,8 @@ const getAdminBoard = () => {
 const getAllUserList = () => {
   return api.get("/api/alluser", { headers: authHeader() });
 };
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+
+export {
   getPublicContent,
   getUserBoard,
   getModeratorBoard,
